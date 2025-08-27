@@ -8,3 +8,6 @@ dataset/
 # Ambiente Virtual
 venv/
 .venv/
+
+# ds store
+.DS_Store

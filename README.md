@@ -27,7 +27,7 @@ brew install chromedriver
 1. Baixe de https://chromedriver.chromium.org/
 2. Adicione ao PATH do sistema
 
-## 🛠 Instalação
+## Como usar 
 
 1. **Clone o repositório**
 ```bash
@@ -48,7 +48,7 @@ source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
-## Como Usar
+## Como baixar imagens
 
 ### Uso Básico
 ```bash
@@ -75,7 +75,8 @@ python google_images_scraper.py \
 | `--delay` | Delay entre downloads (segundos) | 1.0 |
 | `--headless` | Executa sem interface gráfica | False |
 
-###  **Otimização de Velocidade**
+###  Otimização de Velocidade e Debugging
+
 ```bash
 # Modo rápido (menor delay)
 --delay 0.5
@@ -86,14 +87,11 @@ python google_images_scraper.py \
 # Modo batch (muitas imagens)
 --images 500 --delay 1.0
 
-# exemplo
-python google_images_scraper.py --terms "gato" --images 10 --delay 0.5
-```
+# Sem ver navegador (headless)
+--headles
 
-### **Debugging e Testes**
-```bash
-# Ver navegador funcionando modo verbose (sem headless)
-python google_images_scraper.py --terms "gato" --images 10
+# exemplo com navegador e tempo ajustado
+python google_images_scraper.py --terms "gato" --images 10 --delay 0.5
 
 # Sem Ver navegador funcionando (headless)
 python google_images_scraper.py --terms "gato" --images 10 --delay 0.5 --headless
