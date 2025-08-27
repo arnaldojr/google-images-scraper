@@ -1,0 +1,10 @@
+# .gitignore
+*.pyc
+__pycache__/
+
+# Dataset
+dataset/
+
+# Ambiente Virtual
+venv/
+.venv/
